@@ -7,5 +7,12 @@ Authors@R:
            role = c("aut", "cre"),
            email = "augusto.hassel@gmail.com")
 Imports: 
+    config,
+    dplyr,
+    leaflet,
+    lubridate,
     renv,
+    shiny,
+    shiny.semantic,
+    tidyr,
     usethis
