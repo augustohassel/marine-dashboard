@@ -1,0 +1,11 @@
+Package: marine-dashboard
+Title: Shiny Developer Test Appsilon
+Version: 0.0.0.9000
+Authors@R: 
+    person(given = "Augusto",
+           family = "Hassel",
+           role = c("aut", "cre"),
+           email = "augusto.hassel@gmail.com")
+Imports: 
+    renv,
+    usethis
