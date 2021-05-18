@@ -9,10 +9,15 @@ Authors@R:
 Imports: 
     config,
     dplyr,
+    feather,
+    geodist,
+    janitor,
     leaflet,
     lubridate,
     renv,
     shiny,
     shiny.semantic,
+    stringr,
     tidyr,
-    usethis
+    usethis,
+    vroom
