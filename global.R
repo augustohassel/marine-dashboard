@@ -9,8 +9,8 @@ config <- config::get(config = "local-test", file = "config.yml")
 paquetes <- list(
   "Rep" = list("renv", "config"),
   "Shiny Core" = list("shiny", "shiny.semantic"),
-  "Tidyverse" = list("dplyr", "tidyr", "purrr", "lubridate", "magrittr"),
-  "Map" = list("leaflet")
+  "Tidyverse" = list("dplyr", "tidyr", "purrr", "lubridate", "magrittr", "vroom", "stringr", "janitor", "feather"),
+  "Map" = list("leaflet", "geodist")
 )
 
 lapply(as.list(c(paquetes, recursive = T, use.names = F)),
@@ -32,12 +32,17 @@ options(
   
 Sys.setenv(TZ = config$params$TZ)
 
-
 # 4. Load data ------------------------------------------------------------
 
-
-
-
+walk(
+  .x = list("ships_info", "ships_distances"), 
+  .f = function(x) {
+    feather::read_feather(
+      path = glue::glue("app/data/{x}.feather")
+      ) %>%
+      assign(x = x, value = ., envir = .GlobalEnv)
+  }
+)
 
 # 5. Modules --------------------------------------------------------------
 
