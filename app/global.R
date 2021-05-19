@@ -2,7 +2,7 @@
 # 1. renv & Config File ---------------------------------------------------
 
 renv::consent(provided = TRUE); renv::restore();
-config <- config::get(config = "local-test", file = "config.yml")
+config <- config::get(config = "", file = "config.yml")
 
 # 2. Libraries ------------------------------------------------------------
 
@@ -38,7 +38,7 @@ walk(
   .x = list("ships_info", "ships_distances"), 
   .f = function(x) {
     feather::read_feather(
-      path = glue::glue("app/data/{x}.feather")
+      path = glue::glue("data/{x}.feather")
       ) %>%
       assign(x = x, value = ., envir = .GlobalEnv)
   }
