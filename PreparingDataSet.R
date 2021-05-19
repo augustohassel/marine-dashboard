@@ -26,7 +26,7 @@ ships_info <- ships %>%
   summarise(
     across(
       .cols = c(Shipname, Flag, Length, Width, Dwt, Shiptype, Ship_type), 
-      .fns = unique
+      .fns = first
     )
   )
 

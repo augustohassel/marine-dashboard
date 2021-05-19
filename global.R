@@ -44,6 +44,12 @@ walk(
   }
 )
 
+factor_ship_types <- ships_info %>% 
+  distinct(Shiptype, Ship_type) %>% 
+  arrange(Ship_type) %>% {
+    setNames(object = .$Shiptype, nm = .$Ship_type)
+  }
+
 # 5. Modules --------------------------------------------------------------
 
 invisible(lapply(list.files(path = "modules", full.names = T), source))
