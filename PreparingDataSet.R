@@ -1,4 +1,6 @@
 
+# First I have to download data from https://docs.google.com/document/d/1-2wzWoCh88FaVmFZtLdAJReRiUe9-6yOZcOWEMe_7VQ/edit# 
+
 # 1. Loading basic packages -----------------------------------------------
 
 paquetes <- list(
