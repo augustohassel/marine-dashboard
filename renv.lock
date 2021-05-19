@@ -74,10 +74,10 @@
     },
     "bslib": {
       "Package": "bslib",
-      "Version": "0.2.5",
+      "Version": "0.2.5.1",
       "Source": "Repository",
       "Repository": "CRAN",
-      "Hash": "e2049406d0e4f37de7b9f1a1a794eb8a"
+      "Hash": "2f069f3f42847231aef7baa49bed97b0"
     },
     "cachem": {
       "Package": "cachem",
@@ -571,10 +571,15 @@
     },
     "shiny.semantic": {
       "Package": "shiny.semantic",
-      "Version": "0.4.2",
-      "Source": "Repository",
-      "Repository": "CRAN",
-      "Hash": "d705c4ce908c8768af2cd688c73fa2d1"
+      "Version": "0.4.3",
+      "Source": "GitHub",
+      "RemoteType": "github",
+      "RemoteHost": "api.github.com",
+      "RemoteRepo": "shiny.semantic",
+      "RemoteUsername": "Appsilon",
+      "RemoteRef": "develop",
+      "RemoteSha": "41afd8e9f817fb8543670497ec8f466dfaa17ab1",
+      "Hash": "82dd9431dfc5df160609bd3bf0b8de8f"
     },
     "snakecase": {
       "Package": "snakecase",
